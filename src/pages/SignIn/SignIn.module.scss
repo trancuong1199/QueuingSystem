@@ -1,0 +1,113 @@
+.wrapper {
+    display: flex;
+}
+
+.singIn-left {
+    flex: 1;
+    text-align: center;
+    background-color: #f6f6f6;
+}
+
+.singIn-left img {
+    width: 169.52px;
+    height: 135.96px;
+    margin: 60px 0;
+}
+
+.inner {
+    margin-left: 175px;
+
+    & input {
+        cursor: text;
+    }
+
+    & label {
+        cursor: default;
+    }
+}
+
+p,
+label {
+    display: flex;
+    width: 133px;
+    height: 27px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 27px;
+    color: #37474f;
+    margin: 10px 0;
+}
+
+input {
+    display: flex;
+    padding: 10px 16px 10px 12px;
+    width: 400px;
+    height: 44px;
+    border: 1.5px solid #d4d4d7;
+    border-radius: 8px;
+}
+
+.singIn-right {
+    width: 748px;
+    background-color: var(--white);
+}
+
+.singIn-right {
+    padding: 70px;
+}
+
+.singIn-right img {
+    position: relative;
+    width: 550px;
+    height: 580px;
+}
+
+.title {
+    position: absolute;
+    top: 48%;
+    left: 70%;
+}
+
+.title p {
+    width: 200px;
+    font-size: 3.2rem;
+    color: var(--menu-color);
+}
+
+.title h3 {
+    text-transform: uppercase;
+    width: 300px;
+    font-size: 3.2rem;
+    color: var(--menu-color);
+}
+
+#password,
+#name {
+    cursor: text;
+}
+
+// icon password
+.password {
+    position: relative;
+}
+
+.icon-show {
+    position: absolute;
+    right: 28%;
+    top: 28%;
+    font-size: 2rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.error {
+    color: red;
+    font-weight: 500;
+}
+
+strong {
+    font-weight: 400;
+    color: red;
+}

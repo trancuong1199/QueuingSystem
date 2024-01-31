@@ -1,0 +1,85 @@
+.table {
+    width: 92%;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.idProduct {
+    width: 150px;
+}
+
+.nameProduct {
+    width: 150px;
+}
+
+.addressProduct {
+    width: 160px;
+}
+
+.activeProduct {
+    width: 180px;
+}
+
+.connectProduct {
+    width: 145px;
+}
+
+.serviceProduct {
+    width: 300px;
+}
+
+.detailProduct {
+    width: 82px;
+}
+
+.updateProduct {
+    width: 106px;
+}
+
+.table-header {
+    background-color: var(--btn-color);
+    color: var(--white);
+    height: 49px;
+}
+
+.table-results {
+    background-color: var(--white);
+}
+
+.table-change {
+    background-color: var(--hover-color);
+}
+
+td {
+    padding-left: 10px;
+}
+
+.notiResult {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.notiResult span {
+    display: flex;
+}
+
+.accountStatus {
+    width: 150px;
+}
+
+// icon
+
+.onIcon {
+    width: 10px;
+    height: 10px;
+    color: #34cd26;
+    margin: 0 5px;
+}
+
+.offIcon {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    color: #ec3740;
+}

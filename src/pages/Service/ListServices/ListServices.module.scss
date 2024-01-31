@@ -1,0 +1,39 @@
+.service-date {
+    display: flex;
+    align-items: center;
+}
+
+.service-input {
+    width: 150px;
+    height: 44px;
+    font-size: 1.4rem;
+    border: 1.5px solid #d4d4d7;
+    border-radius: 8px;
+    color: #a9a9b0;
+}
+
+.service-date-children {
+    position: relative;
+}
+
+.service-icon {
+    font-size: 1rem;
+    margin: 0 5px;
+}
+
+.date-icon {
+    position: absolute;
+    font-size: 1.8rem;
+    top: 12px;
+    left: 80%;
+    color: var(--btn-color);
+}
+
+.updateService,
+.detailService {
+    width: 12%;
+}
+
+.fixFont {
+    font-weight: 400;
+}

@@ -1,0 +1,157 @@
+.wrapper {
+    padding: 10px 24px;
+    width: 162px;
+    border: none;
+    transition: ease-in 0.2s;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    background-color: transparent;
+
+    + .wrapper {
+        margin-left: 20px;
+    }
+}
+
+// Button types
+
+.primary {
+    background: var(--btn-color);
+    color: var(--white);
+    margin-top: 20px;
+
+    &:hover {
+        cursor: pointer;
+        transition: ease-in 0.2s;
+        background: var(--menu-color);
+    }
+}
+
+.outline {
+    padding: 8px 55px;
+    background: var(--white);
+    border: 1px solid var(--menu-color);
+
+    &:hover {
+        color: var(--btn-color);
+        cursor: pointer;
+        transition: ease-in 0.2s;
+        background: var(--hover-color);
+    }
+
+    & span {
+        color: var(--menu-color);
+    }
+}
+
+.text {
+    display: flex;
+    background: transparent;
+    padding: 10px 0;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    & span {
+        color: red;
+    }
+}
+
+.navigate {
+    display: flex;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    top: 80%;
+    align-items: center;
+    padding: 12px 4px;
+    width: 80px;
+    height: 94px;
+    background: var(--hover-color);
+    box-shadow: 0px 0px 6px #e7e9f2;
+    border-radius: 8px 0px 0px 8px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.update {
+    display: flex;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    top: 25%;
+    align-items: center;
+    padding: 10px 4px 15px 4px;
+    width: 100px;
+    height: 100px;
+    background: var(--hover-color);
+    box-shadow: 0px 0px 6px #e7e9f2;
+    border-radius: 8px 0px 0px 8px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.back {
+    padding-left: 20px;
+    height: 80px;
+    margin-top: 100px;
+}
+
+.logout {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    width: 176px;
+    height: 48px;
+    background: var(--hover-color);
+    border-radius: 8px;
+    border: none;
+    font-size: 1.5rem;
+    margin-top: 250px;
+    justify-content: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    & span {
+        display: flex;
+    }
+}
+
+// Button sizes
+
+.small {
+    width: 147px;
+    height: 48px;
+}
+
+.medium {
+    width: 300px;
+}
+
+.large {
+    width: 0;
+}
+
+// Navigate
+
+.iconPlus {
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    color: var(--btn-color);
+}
+
+.navigateProduct {
+    color: var(--btn-color);
+    line-height: 20px;
+    margin: 0;
+    width: 100%;
+}

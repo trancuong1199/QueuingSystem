@@ -1,0 +1,165 @@
+.addNumber {
+    width: 1112px;
+    height: 600px;
+    top: 20px;
+    background: var(--white);
+    box-shadow: 0px 2px 6px rgb(219 219 219 / 50%);
+    border-radius: 12px;
+    padding: 40px 20px;
+}
+
+.addNumber-title {
+    width: 100%;
+    font-weight: 600;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    color: var(--menu-color);
+    text-align: center;
+}
+
+.addNumber-choice {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 55px;
+    color: #535261;
+    margin-top: 20px;
+}
+
+.dropdown {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 80px;
+
+    & button {
+        margin: 0;
+    }
+}
+
+.customerName {
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.customerName-title {
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #535261;
+}
+
+.customerName-input {
+    border: 1px solid #ccc;
+}
+
+// pop-up
+
+.modal {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.pop-up {
+    display: none;
+    position: relative;
+    top: -60%;
+    left: 31.5%;
+    width: 400px;
+    height: 200px;
+    background: #ffffff;
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+    box-shadow: 0px 0px 5px #ccc;
+    text-align: center;
+    padding-top: 10px;
+    animation: modalFadeIn ease 0.6s;
+}
+.pop-up__icon {
+    position: absolute;
+    left: 90%;
+    top: 8%;
+    font-size: 2rem;
+    color: var(--btn-color);
+    transition: ease-in 0.2s;
+
+    &:hover {
+        cursor: pointer;
+        color: var(--menu-color);
+        transition: ease-in 0.2s;
+    }
+}
+
+.pop-up__main {
+    & label {
+        font-weight: 700;
+        font-size: 2.8rem;
+        line-height: 48px;
+        width: 100%;
+        justify-content: center;
+        color: #535261;
+        margin-bottom: 20px;
+    }
+
+    & span {
+        font-weight: 800;
+        font-size: 4.5rem;
+        line-height: 60px;
+        color: var(--menu-color);
+    }
+
+    & p {
+        width: 100%;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 18px;
+        color: #282739;
+        padding-bottom: 35px;
+        & strong {
+            font-weight: 500;
+            color: #000;
+        }
+    }
+}
+
+.pop-up__time {
+    width: 100%;
+    background: var(--btn-color);
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    box-shadow: 0px 0px 5px #ccc;
+    padding: 10px;
+
+    & label {
+        color: var(--white);
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* tạo ra chuyển động của pop-up */
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,119 @@
+.container {
+    display: flex;
+}
+
+.content {
+    flex: 1;
+    background: #f6f6f6;
+}
+
+.content-header {
+    height: 88px;
+    left: 200px;
+    top: 0px;
+    padding: 20px 40px;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-header-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--btn-color);
+}
+
+.content-header-right {
+    display: flex;
+    align-items: center;
+}
+
+.content-header-icon {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    color: var(--menu-color);
+    background: var(--hover-color);
+    border-radius: 25px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.content-header-right-children {
+    display: flex;
+    margin: 0 20px;
+}
+
+.content-header-right-children img {
+    width: 40px;
+    height: 40px;
+    right: 132px;
+    top: 0px;
+    border-radius: 48px;
+}
+
+.content-header-right-children-info {
+    margin-left: 5px;
+}
+
+.content-header-right-children-info h4 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #7e7d88;
+}
+
+.content-header-right-children-info h3 {
+    width: 124px;
+    height: 24px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 24px;
+    color: #535261;
+}
+
+.test {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownList {
+    display: none;
+    position: absolute;
+    background: var(--white);
+    animation: fadeIn ease-in 0.2s;
+    margin-top: 10px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    animation: fadeIn ease-in 0.1s;
+    z-index: 10;
+    &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 50%;
+        height: 50px;
+        top: -25px;
+        left: 0;
+        cursor: pointer;
+    }
+}
+
+.content-header-right1:hover .dropdownList {
+    display: block;
+}
+.option-item {
+    width: 250px;
+    height: 44px;
+    padding: 10px 12px;
+
+    &:hover {
+        background-color: var(--hover-color);
+        cursor: pointer;
+    }
+}

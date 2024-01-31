@@ -1,0 +1,32 @@
+.header__option-selected-title {
+    font-weight: 600;
+    cursor: default;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px 10px 5px;
+    width: 300px;
+    height: 44px;
+    background: var(--white);
+    border: 1.5px solid #d4d4d7;
+    border-radius: 8px;
+}
+
+.search input {
+    height: 40px;
+    cursor: text;
+}
+
+.search-btn {
+    font-size: 1.7rem;
+    color: #f6aa6c;
+    background-color: transparent;
+    transition: 0.1s, ease-out;
+    &:hover {
+        cursor: pointer;
+        color: var(--menu-color);
+        transition: 0.1s, ease-out;
+    }
+}
